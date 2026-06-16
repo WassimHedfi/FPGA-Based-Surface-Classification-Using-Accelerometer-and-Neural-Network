@@ -265,7 +265,7 @@ This project demonstrates:
 - Hardware acceleration  
 - Edge AI deployment  
 
-It is a first step toward **FPGA-based intelligent sensing systems for agriculture and medical applications**.
+It is a first step toward **FPGA-based intelligent sensing systems**.
 
 ---
 
