@@ -23,23 +23,58 @@ When the FPGA board is tapped on a surface, the system captures accelerometer da
 ---
 
 ## System Architecture
-Accelerometer (IMU)
-↓
-Fixed Sampling (Timer ~200 Hz)
-↓
-UART Streaming
-↓
-PC Data Logger (Python)
-↓
-Feature Extraction
-↓
-Neural Network Training (PyTorch / Sklearn)
-↓
-Quantized Weights Export
-↓
-FPGA Inference Engine (MLP)
-↓
-Classification Output (LEDs / UART)
+
+## System Architecture
+
+```text
++----------------------+
+| Accelerometer (IMU)  |
++----------------------+
+           |
+           v
++----------------------+
+| Fixed Sampling       |
+| (~200 Hz Timer)      |
++----------------------+
+           |
+           v
++----------------------+
+| UART Streaming       |
++----------------------+
+           |
+           v
++----------------------+
+| PC Data Logger       |
+| (Python)             |
++----------------------+
+           |
+           v
++----------------------+
+| Feature Extraction   |
++----------------------+
+           |
+           v
++----------------------+
+| NN Training          |
+| (PyTorch / Sklearn)  |
++----------------------+
+           |
+           v
++----------------------+
+| Quantized Weights    |
+| Export               |
++----------------------+
+           |
+           v
++----------------------+
+| FPGA Inference      |
+| Engine (MLP)        |
++----------------------+
+           |
+           v
++----------------------+
+| Output (LEDs/UART)   |
++----------------------+
 
 ---
 
