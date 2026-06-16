@@ -24,8 +24,6 @@ When the FPGA board is tapped on a surface, the system captures accelerometer da
 
 ## System Architecture
 
-## System Architecture
-
 ```text
 +----------------------+
 | Accelerometer (IMU)  |
@@ -75,7 +73,7 @@ When the FPGA board is tapped on a surface, the system captures accelerometer da
 +----------------------+
 | Output (LEDs/UART)   |
 +----------------------+
-
+```
 ---
 
 ## Key Features
